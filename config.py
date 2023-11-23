@@ -19,7 +19,7 @@ APP_ID = int(os.environ.get("APP_ID", "21428181"))
 API_HASH = os.environ.get("API_HASH", "d3aa7bec27b6e3950ac4ca2feaef516f")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "1002124990401"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002124990401"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "5673825854"))
@@ -32,7 +32,7 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://mdebjit742:OusGULYKCKcmQM
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "1002124990401"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -60,7 +60,7 @@ DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 
-ADMINS.append(OWNER_ID)
+ADMINS.append(5673825854)
 ADMINS.append(1250450587)
 
 LOG_FILE_NAME = "filesharingbot.txt"
